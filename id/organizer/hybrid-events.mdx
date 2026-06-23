@@ -1,0 +1,119 @@
+---
+title: "Jalankan event hybrid dengan peserta in-person dan virtual"
+sidebarTitle: "Event hybrid"
+description: "Siapkan satu event HiiFest yang melayani peserta in-person dan online secara bersamaan, dengan tingkatan tiket dan alur check-in terpisah untuk masing-masing."
+---
+
+Event hybrid memungkinkan Anda menyambut tamu di venue fisik sekaligus melakukan streaming ke audiens online — semuanya dikelola dari satu halaman event HiiFest. Alih-alih menjalankan dua event terpisah dengan dua alur pendaftaran terpisah, HiiFest menyatukan semuanya: satu URL event, manajemen peserta terpadu, dan tingkatan tiket terpisah untuk setiap format kehadiran.
+
+## Apa itu event hybrid di HiiFest
+
+Di HiiFest, event hybrid adalah event yang Anda konfigurasikan dengan format **Hybrid**. Ini membuka kolom alamat venue fisik dan kolom URL streaming virtual pada event yang sama. Peserta memilih mode kehadiran yang mereka inginkan saat memilih tingkatan tiket, dan setiap grup menerima detail konfirmasi yang relevan dengan mode mereka — petunjuk arah venue untuk tamu in-person, dan tautan streaming untuk tamu virtual.
+
+Anda mengelola kedua grup dari tab **Attendees** yang sama di dasbor Anda, dengan filter untuk melihat masing-masing mode secara terpisah.
+
+## Menyiapkan event hybrid
+
+<Steps>
+  <Step title="Buat atau edit event Anda">
+    Buka [dasbor organizer](https://platform.hiifest.app/dashboard) Anda dan klik **Create Event**, atau buka draf event yang sudah ada. Arahkan ke bagian **Event Details**.
+  </Step>
+
+  <Step title="Pilih format Hybrid">
+    Di bawah **Event Format**, pilih **Hybrid**. Dua bagian baru akan muncul: **Venue Details** dan **Virtual Access**.
+  </Step>
+
+  <Step title="Masukkan detail venue Anda">
+    Isi informasi venue fisik untuk peserta in-person Anda:
+
+    - Nama venue
+    - Alamat lengkap (jalan, kota, provinsi, kode pos)
+    - Pin peta opsional untuk navigasi yang mudah
+    - Instruksi masuk apa pun (misalnya, "Gunakan pintu samping di Jl. Sudirman")
+  </Step>
+
+  <Step title="Tambahkan tautan akses virtual Anda">
+    Tempelkan URL untuk streaming online atau konferensi video Anda ke dalam kolom **Virtual Access**. Ini dapat berupa:
+
+    - Tautan webinar atau meeting Zoom
+    - URL YouTube Live stream
+    - URL RTMP kustom atau embed
+
+    HiiFest hanya mengirimkan tautan ini ke peserta yang membeli tingkatan tiket format virtual, menjaganya tetap pribadi dari pembeli yang hanya in-person.
+  </Step>
+
+  <Step title="Buat tingkatan tiket terpisah untuk setiap format">
+    Tambahkan setidaknya satu tingkatan tiket untuk peserta **in-person** dan satu untuk peserta **virtual**. Tandai setiap tingkatan dengan mode kehadirannya sehingga HiiFest mengirimkan detail konfirmasi yang benar:
+
+    - *In-Person — General Admission* → mengirim detail venue
+    - *Virtual — Online Pass* → mengirim tautan streaming
+
+    Lihat [Tingkatan tiket](/id/organizer/ticket-tiers) untuk instruksi lengkap tentang konfigurasi harga, kapasitas, dan tanggal ketersediaan.
+  </Step>
+
+  <Step title="Tetapkan kapasitas secara independen untuk setiap format">
+    Audiens fisik dan virtual memiliki batasan kapasitas yang berbeda. Tetapkan kapasitas tingkatan in-person Anda agar sesuai dengan batas venue dan kapasitas tingkatan virtual Anda agar sesuai dengan batas penonton bersamaan dari platform streaming Anda (atau biarkan tanpa batas jika platform Anda mengizinkan penonton tak terbatas).
+  </Step>
+
+  <Step title="Pratinjau dan publikasikan">
+    Gunakan **Preview** untuk memverifikasi bahwa halaman event menampilkan kedua opsi kehadiran dengan jelas. Setelah siap, klik **Publish Event**. Tingkatan tiket in-person dan virtual akan tersedia untuk pembelian secara bersamaan.
+  </Step>
+</Steps>
+
+## Mengelola peserta in-person vs virtual
+
+Setelah event Anda tayang, tab **Attendees** menampilkan semua pendaftar dari kedua format dalam satu daftar. Gunakan filter **Attendance Mode** untuk beralih antar tampilan:
+
+| Tampilan | Apa yang ditampilkan |
+|---|---|
+| **All Attendees** | Setiap pendaftar tanpa memandang mode kehadiran |
+| **In-Person** | Hanya peserta yang membeli tingkatan in-person |
+| **Virtual** | Hanya peserta yang membeli tingkatan virtual |
+
+### Check-in untuk peserta in-person
+
+Gunakan pemindai check-in kode QR pada hari event untuk memverifikasi dan menerima peserta in-person. Peserta virtual otomatis ditandai sebagai *Joined* saat mereka mengeklik tautan streaming — tidak diperlukan check-in manual. Lihat [Kelola peserta](/id/organizer/manage-attendees) untuk panduan check-in lengkap.
+
+### Mengirim komunikasi yang ditargetkan
+
+Saat mengirim pengumuman, pilih **In-Person Attendees** atau **Virtual Attendees** sebagai grup penerima Anda untuk mengirim pesan yang spesifik per format — misalnya, instruksi parkir kepada tamu in-person dan pengingat "streaming dimulai dalam 30 menit" kepada tamu virtual.
+
+## Tingkatan tiket untuk event hybrid
+
+Susun tingkatan Anda untuk mencerminkan perbedaan nilai dan biaya yang nyata antara kedua format:
+
+<CardGroup cols={2}>
+  <Card title="Tingkatan In-Person" icon="building">
+    Tetapkan harga untuk menutupi biaya venue, katering, dan produksi. Pertimbangkan sub-tingkatan Early Bird dan VIP dalam format in-person untuk segmentasi pendapatan tambahan.
+  </Card>
+  <Card title="Tingkatan Virtual" icon="video">
+    Tetapkan harga lebih rendah untuk mencerminkan biaya per-peserta yang lebih rendah dan jangkauan geografis yang lebih luas. Tingkatan virtual gratis atau berbiaya rendah dapat memperluas audiens event Anda secara signifikan.
+  </Card>
+  <Card title="Tingkatan Early Bird" icon="clock">
+    Tawarkan harga early bird yang didiskon untuk format in-person dan virtual secara independen. Tetapkan tanggal akhir penjualan pada masing-masing untuk menciptakan urgensi dan mendorong pendaftaran awal.
+  </Card>
+  <Card title="Tingkatan VIP" icon="star">
+    Tambahkan tingkatan VIP in-person premium dengan kapasitas terbatas untuk peserta yang menginginkan tempat duduk khusus, prioritas masuk, atau akses eksklusif di venue fisik Anda.
+  </Card>
+</CardGroup>
+
+<Note>
+  Event hybrid tersedia di semua paket HiiFest, termasuk Starter. Namun, jumlah peserta per event dibatasi oleh paket Anda: 150 pada Starter, 500 pada Growth, dan tidak terbatas pada Pro dan Enterprise. Batas ini berlaku untuk total gabungan antara peserta in-person dan virtual.
+</Note>
+
+## Langkah berikutnya
+
+<CardGroup cols={2}>
+  <Card title="Tingkatan tiket" icon="ticket" href="/id/organizer/ticket-tiers">
+    Konfigurasikan tingkatan tiket in-person dan virtual terpisah dengan harga dan batas kapasitas yang berbeda.
+  </Card>
+  <Card title="Kelola peserta" icon="users" href="/id/organizer/manage-attendees">
+    Jalankan check-in QR untuk tamu in-person dan lacak kehadiran virtual dalam satu tampilan terpadu.
+  </Card>
+  <Card title="Networking Hub" icon="network-wired" href="/id/organizer/networking-hub">
+    Bantu peserta in-person dan virtual Anda saling terhubung lintas kedua format.
+  </Card>
+  <Card title="Custom Branding" icon="palette" href="/id/organizer/custom-branding">
+    Buat halaman event hybrid Anda tampak sepenuhnya sesuai brand untuk kedua audiens.
+  </Card>
+</CardGroup>

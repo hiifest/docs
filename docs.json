@@ -19,126 +19,260 @@
     "options": ["copy", "view", "assistant"]
   },
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Home",
-          "icon": "house",
-          "href": "/"
+    "languages": [
+      {
+        "language": "en",
+        "default": true,
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Home",
+              "icon": "house",
+              "href": "/"
+            },
+            {
+              "anchor": "Platform",
+              "icon": "arrow-up-right",
+              "href": "https://platform.hiifest.app"
+            },
+            {
+              "anchor": "Support",
+              "icon": "life-buoy",
+              "href": "/support/contact"
+            }
+          ]
         },
-        {
-          "anchor": "Platform",
-          "icon": "arrow-up-right",
-          "href": "https://platform.hiifest.app"
+        "tabs": [
+          {
+            "tab": "Getting Started",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": [
+                  "introduction",
+                  "quickstart",
+                  "account-setup"
+                ]
+              },
+              {
+                "group": "Core Concepts",
+                "pages": [
+                  "concepts/workspace-types",
+                  "concepts/events",
+                  "concepts/ticketing",
+                  "concepts/team-members"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Organizer Guide",
+            "groups": [
+              {
+                "group": "Events",
+                "pages": [
+                  "organizer/create-event",
+                  "organizer/ticket-tiers",
+                  "organizer/manage-attendees",
+                  "organizer/hybrid-events"
+                ]
+              },
+              {
+                "group": "Growth & Marketing",
+                "pages": [
+                  "organizer/ai-features",
+                  "organizer/networking-hub",
+                  "organizer/referral-system",
+                  "organizer/custom-branding"
+                ]
+              },
+              {
+                "group": "Analytics",
+                "pages": [
+                  "organizer/analytics-dashboard",
+                  "organizer/advanced-analytics",
+                  "organizer/revenue-tracking"
+                ]
+              },
+              {
+                "group": "Operations",
+                "pages": [
+                  "organizer/vendor-directory",
+                  "organizer/venue-mapping",
+                  "organizer/crm-integrations"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Attendees & Vendors",
+            "groups": [
+              {
+                "group": "Attendees",
+                "pages": [
+                  "attendees/discover-events",
+                  "attendees/buy-tickets",
+                  "attendees/manage-tickets"
+                ]
+              },
+              {
+                "group": "Vendors & Venues",
+                "pages": [
+                  "vendors/list-services",
+                  "vendors/manage-inquiries",
+                  "venues/list-venue",
+                  "venues/manage-bookings"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Plans & Support",
+            "groups": [
+              {
+                "group": "Pricing",
+                "pages": [
+                  "plans/overview",
+                  "plans/compare",
+                  "plans/enterprise"
+                ]
+              },
+              {
+                "group": "Support",
+                "pages": [
+                  "support/submit-ticket",
+                  "support/faq",
+                  "support/contact"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "id",
+        "global": {
+          "anchors": [
+            {
+              "anchor": "Beranda",
+              "icon": "house",
+              "href": "/id"
+            },
+            {
+              "anchor": "Platform",
+              "icon": "arrow-up-right",
+              "href": "https://platform.hiifest.app"
+            },
+            {
+              "anchor": "Dukungan",
+              "icon": "life-buoy",
+              "href": "/id/support/contact"
+            }
+          ]
         },
-        {
-          "anchor": "Support",
-          "icon": "life-buoy",
-          "href": "/support/contact"
-        }
-      ]
-    },
-    "tabs": [
-      {
-        "tab": "Getting Started",
-        "groups": [
+        "tabs": [
           {
-            "group": "Overview",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "account-setup"
+            "tab": "Memulai",
+            "groups": [
+              {
+                "group": "Ikhtisar",
+                "pages": [
+                  "id/introduction",
+                  "id/quickstart",
+                  "id/account-setup"
+                ]
+              },
+              {
+                "group": "Konsep Inti",
+                "pages": [
+                  "id/concepts/workspace-types",
+                  "id/concepts/events",
+                  "id/concepts/ticketing",
+                  "id/concepts/team-members"
+                ]
+              }
             ]
           },
           {
-            "group": "Core Concepts",
-            "pages": [
-              "concepts/workspace-types",
-              "concepts/events",
-              "concepts/ticketing",
-              "concepts/team-members"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Organizer Guide",
-        "groups": [
-          {
-            "group": "Events",
-            "pages": [
-              "organizer/create-event",
-              "organizer/ticket-tiers",
-              "organizer/manage-attendees",
-              "organizer/hybrid-events"
-            ]
-          },
-          {
-            "group": "Growth & Marketing",
-            "pages": [
-              "organizer/ai-features",
-              "organizer/networking-hub",
-              "organizer/referral-system",
-              "organizer/custom-branding"
-            ]
-          },
-          {
-            "group": "Analytics",
-            "pages": [
-              "organizer/analytics-dashboard",
-              "organizer/advanced-analytics",
-              "organizer/revenue-tracking"
-            ]
-          },
-          {
-            "group": "Operations",
-            "pages": [
-              "organizer/vendor-directory",
-              "organizer/venue-mapping",
-              "organizer/crm-integrations"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Attendees & Vendors",
-        "groups": [
-          {
-            "group": "Attendees",
-            "pages": [
-              "attendees/discover-events",
-              "attendees/buy-tickets",
-              "attendees/manage-tickets"
+            "tab": "Panduan Penyelenggara",
+            "groups": [
+              {
+                "group": "Acara",
+                "pages": [
+                  "id/organizer/create-event",
+                  "id/organizer/ticket-tiers",
+                  "id/organizer/manage-attendees",
+                  "id/organizer/hybrid-events"
+                ]
+              },
+              {
+                "group": "Pertumbuhan & Pemasaran",
+                "pages": [
+                  "id/organizer/ai-features",
+                  "id/organizer/networking-hub",
+                  "id/organizer/referral-system",
+                  "id/organizer/custom-branding"
+                ]
+              },
+              {
+                "group": "Analitik",
+                "pages": [
+                  "id/organizer/analytics-dashboard",
+                  "id/organizer/advanced-analytics",
+                  "id/organizer/revenue-tracking"
+                ]
+              },
+              {
+                "group": "Operasional",
+                "pages": [
+                  "id/organizer/vendor-directory",
+                  "id/organizer/venue-mapping",
+                  "id/organizer/crm-integrations"
+                ]
+              }
             ]
           },
           {
-            "group": "Vendors & Venues",
-            "pages": [
-              "vendors/list-services",
-              "vendors/manage-inquiries",
-              "venues/list-venue",
-              "venues/manage-bookings"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Plans & Support",
-        "groups": [
-          {
-            "group": "Pricing",
-            "pages": [
-              "plans/overview",
-              "plans/compare",
-              "plans/enterprise"
+            "tab": "Peserta & Vendor",
+            "groups": [
+              {
+                "group": "Peserta",
+                "pages": [
+                  "id/attendees/discover-events",
+                  "id/attendees/buy-tickets",
+                  "id/attendees/manage-tickets"
+                ]
+              },
+              {
+                "group": "Vendor & Lokasi",
+                "pages": [
+                  "id/vendors/list-services",
+                  "id/vendors/manage-inquiries",
+                  "id/venues/list-venue",
+                  "id/venues/manage-bookings"
+                ]
+              }
             ]
           },
           {
-            "group": "Support",
-            "pages": [
-              "support/submit-ticket",
-              "support/faq",
-              "support/contact"
+            "tab": "Paket & Dukungan",
+            "groups": [
+              {
+                "group": "Harga",
+                "pages": [
+                  "id/plans/overview",
+                  "id/plans/compare",
+                  "id/plans/enterprise"
+                ]
+              },
+              {
+                "group": "Dukungan",
+                "pages": [
+                  "id/support/submit-ticket",
+                  "id/support/faq",
+                  "id/support/contact"
+                ]
+              }
             ]
           }
         ]

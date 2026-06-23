@@ -1,0 +1,118 @@
+---
+title: "Siapkan dan kelola tingkatan tiket untuk event HiiFest Anda"
+sidebarTitle: "Tingkatan tiket"
+description: "Buat beberapa tingkatan tiket dengan nama kustom, harga IDR, batas kapasitas, dan ketersediaan berbasis tanggal untuk memaksimalkan pendapatan event Anda."
+---
+
+Menawarkan beberapa tingkatan tiket memungkinkan Anda melayani segmen audiens yang berbeda — pendukung awal, peserta umum, dan tamu premium — sekaligus memberi Anda kendali yang presisi atas pendapatan, kapasitas, dan urgensi. Strategi tingkatan yang terstruktur dengan baik dapat meningkatkan kehadiran maupun nilai tiket rata-rata secara signifikan.
+
+## Membuat tingkatan tiket
+
+Anda dapat menambahkan tingkatan tiket saat pembuatan event atau kapan saja setelah publikasi dengan kembali ke event Anda di [dasbor organizer](https://platform.hiifest.app/dashboard).
+
+<Steps>
+  <Step title="Buka bagian Ticket Tiers">
+    Di dalam penyiapan event atau halaman pengaturan event Anda, gulir ke bagian **Ticket Tiers** dan klik **Add Ticket Tier**.
+  </Step>
+
+  <Step title="Beri nama tingkatan Anda">
+    Masukkan nama yang jelas dan deskriptif yang akan dilihat peserta di halaman event. Contoh: *Early Bird*, *General Admission*, *VIP*, *Online Pass*, *Group of 5*.
+  </Step>
+
+  <Step title="Tetapkan harga">
+    Masukkan harga tiket dalam **IDR (Rupiah Indonesia)**. Untuk menawarkan tiket gratis, masukkan `0`. HiiFest menampilkan harga dalam format *Rp X.XXX.XXX* di semua halaman yang dilihat peserta.
+  </Step>
+
+  <Step title="Tentukan kapasitas">
+    Atur jumlah maksimum tiket yang tersedia di tingkatan ini. Saat batas tercapai, HiiFest secara otomatis menandai tingkatan tersebut sebagai **Sold Out** dan berhenti menerima pembelian untuknya. Kosongkan kolom hanya jika Anda tidak ingin menetapkan batas (tidak disarankan untuk venue fisik).
+  </Step>
+
+  <Step title="Tulis deskripsi tingkatan">
+    Tambahkan deskripsi singkat yang menjelaskan apa yang termasuk dalam tingkatan ini — misalnya, fasilitas, area tempat duduk, atau tingkat akses. Teks ini muncul di bawah nama tingkatan pada halaman event Anda dan membantu peserta memilih dengan yakin.
+  </Step>
+
+  <Step title="Tetapkan tanggal ketersediaan">
+    Secara opsional, tentukan kapan tingkatan ini mulai dijual dan kapan berakhir:
+
+    - **Sale start date** — tingkatan dapat dibeli mulai tanggal dan waktu ini.
+    - **Sale end date** — tingkatan berhenti dapat dibeli pada tanggal dan waktu ini (meskipun kapasitas masih tersedia).
+
+    Beginilah cara diskon early bird bekerja: atur tanggal berakhir di masa depan, dan tingkatan akan otomatis menutup saat tanggal itu terlewat.
+  </Step>
+
+  <Step title="Simpan tingkatan">
+    Klik **Save Tier**. Tingkatan baru langsung muncul di halaman event Anda. Ulangi langkah-langkah ini untuk setiap tingkatan tambahan yang ingin Anda tawarkan.
+  </Step>
+</Steps>
+
+## Tipe tingkatan dan praktik terbaik
+
+Gunakan kombinasi arketipe tingkatan berikut untuk menciptakan penawaran tiket yang menarik:
+
+<CardGroup cols={2}>
+  <Card title="Early Bird" icon="clock">
+    Beri penghargaan kepada pendukung paling antusias Anda dengan harga diskon. Tetapkan batas kapasitas (misalnya 100 tiket pertama) atau tanggal kedaluwarsa yang tegas. Tingkatan early bird membangun momentum dan menghasilkan arus kas awal.
+  </Card>
+  <Card title="General Admission" icon="ticket">
+    Tingkatan standar Anda untuk mayoritas peserta. Tetapkan harga sesuai target dan kapasitas yang sesuai dengan batas venue atau platform virtual Anda.
+  </Card>
+  <Card title="VIP" icon="star">
+    Tawarkan akses premium — tempat duduk khusus, akses backstage, workshop eksklusif, atau kesempatan meet-and-greet. Beri harga lebih tinggi dan jaga kapasitas tetap rendah untuk mempertahankan eksklusivitas.
+  </Card>
+  <Card title="Free" icon="gift">
+    Atur harga ke Rp 0 untuk akses gratis. Gunakan ini untuk event komunitas terbuka, press pass, atau tiket komplimen pembicara. Batas kapasitas tetap berlaku.
+  </Card>
+</CardGroup>
+
+## Menetapkan kapasitas per tingkatan
+
+Setiap tingkatan memiliki kapasitas independen sendiri. Saat satu tingkatan terjual habis, tingkatan lain tetap dapat dibeli. Ini memungkinkan Anda untuk:
+
+- Menutup harga early bird secara otomatis begitu batch pertama habis.
+- Menjaga VIP benar-benar terbatas tanpa memengaruhi general admission.
+- Menjalankan tingkatan in-person dan virtual secara bersamaan untuk [event hybrid](/id/organizer/hybrid-events) dengan batas terpisah untuk setiap format.
+
+<Note>
+  Total kapasitas semua tingkatan Anda tidak boleh melebihi kapasitas riil venue atau platform virtual Anda. HiiFest tidak secara otomatis memvalidasi total terhadap batas event secara keseluruhan — Anda bertanggung jawab untuk menetapkan batas setiap tingkatan dengan benar.
+</Note>
+
+## Ketersediaan berbasis tanggal
+
+Gunakan tanggal mulai dan berakhir penjualan untuk mengotomatisasi transisi tingkatan tanpa intervensi manual:
+
+| Skenario | Konfigurasi |
+|---|---|
+| Early bird yang kedaluwarsa | Tetapkan tanggal berakhir penjualan dua minggu sebelum event. |
+| Tingkatan yang dibuka lebih lambat | Tetapkan tanggal mulai penjualan pada hari Anda ingin tingkatan tersebut tersedia. |
+| Tiket on-door saja | Tetapkan tanggal mulai penjualan pada pagi hari event. |
+| Pre-sale untuk anggota | Tetapkan jendela singkat sebelum penjualan umum dibuka. |
+
+HiiFest mengevaluasi jendela ketersediaan dalam **WIB (UTC+7)** secara default. Anda dapat mengubah zona waktu per event di pengaturan event Anda.
+
+## Biaya transaksi
+
+HiiFest memotong biaya transaksi dari setiap penjualan tiket berbayar. Tarif biaya bergantung pada paket Anda:
+
+| Paket | Biaya transaksi |
+|---|---|
+| Starter | 4% per transaksi |
+| Growth | 2,5% per transaksi |
+| Pro | 1,5% per transaksi |
+| Enterprise | Dinegosiasikan secara individual |
+
+<Tip>
+  Jika Anda menjalankan event bervolume atau berpendapatan tinggi, meng-upgrade ke Growth atau Pro dapat secara signifikan mengurangi biaya per tiket yang terjual. Gunakan selisih biaya untuk membenarkan biaya paket sebelum event Anda diluncurkan.
+</Tip>
+
+Biaya secara otomatis dipotong pada saat payout. Jumlah yang ditampilkan kepada pembeli di halaman pembelian tiket mencerminkan harga nominal yang Anda tetapkan — biaya tidak ditambahkan di atasnya untuk pembeli kecuali Anda memilih untuk membebankannya dalam harga Anda.
+
+## Langkah berikutnya
+
+<CardGroup cols={2}>
+  <Card title="Buat event" icon="calendar-plus" href="/id/organizer/create-event">
+    Telusuri seluruh alur pembuatan event, termasuk menambahkan tingkatan tiket pertama Anda.
+  </Card>
+  <Card title="Kelola peserta" icon="users" href="/id/organizer/manage-attendees">
+    Lacak siapa yang telah membeli setiap tingkatan dan kelola check-in pada hari event.
+  </Card>
+</CardGroup>

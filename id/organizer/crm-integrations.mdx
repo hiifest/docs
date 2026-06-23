@@ -1,0 +1,88 @@
+---
+title: "Sinkronkan data peserta dengan CRM Anda"
+sidebarTitle: "Integrasi CRM"
+description: "Hubungkan HiiFest ke platform CRM Anda untuk menyinkronkan data peserta secara otomatis dan memberdayakan kampanye follow-up — tersedia di paket Pro ke atas."
+---
+
+Menjual tiket adalah awal dari hubungan Anda dengan seorang peserta, bukan akhirnya. Organizer yang membangun audiens yang berkelanjutan menggunakan setiap acara sebagai sumber data kontak berkualitas tinggi — dan mereka memanfaatkan data tersebut di CRM mereka segera setelah acara berakhir. Integrasi CRM HiiFest menyinkronkan catatan peserta Anda langsung ke tool yang sudah digunakan tim marketing dan sales Anda, sehingga Anda dapat menjalankan kampanye follow-up yang tertarget, melibatkan kembali peserta sebelumnya untuk acara berikutnya, dan melacak konversi dari satu pipeline.
+
+<Info>
+  Integrasi CRM memerlukan **paket Pro** (Rp 3.990.000/bulan) atau lebih tinggi. Organizer pada paket Starter atau Growth dapat melakukan upgrade dari **Settings → Billing** untuk mengakses fitur ini.
+</Info>
+
+## Platform CRM yang didukung
+
+HiiFest menawarkan konektor native untuk platform CRM terkemuka, tanpa memerlukan middleware pihak ketiga:
+
+<CardGroup cols={3}>
+  <Card title="HubSpot" icon="h">
+    Sinkronkan kontak langsung ke HubSpot, picu workflow saat pembelian tiket, dan lacak peserta melalui pipeline marketing Anda.
+  </Card>
+  <Card title="Salesforce" icon="cloud">
+    Dorong catatan peserta ke objek Salesforce, petakan field kustom, dan bangun segmen kampanye pasca-acara di Marketing Cloud.
+  </Card>
+  <Card title="Kustom via Webhook" icon="code">
+    Tidak melihat CRM Anda? Gunakan webhook outbound HiiFest untuk mendorong data peserta ke platform apa pun yang menerima request HTTP POST.
+  </Card>
+</CardGroup>
+
+## Menghubungkan CRM Anda
+
+<Steps>
+  <Step title="Buka pengaturan Integrations">
+    Masuk di [platform.hiifest.app/dashboard](https://platform.hiifest.app/dashboard). Klik **Organizer Name** Anda di pojok kanan atas, lalu pilih **Settings**. Di sidebar kiri, klik **Integrations**.
+  </Step>
+  <Step title="Pilih CRM Anda">
+    Di bawah bagian **CRM Connectors**, temukan platform CRM Anda dalam daftar dan klik **Connect**. Jika CRM Anda tidak terdaftar, klik **Add Webhook** untuk mengonfigurasi koneksi kustom.
+  </Step>
+  <Step title="Otorisasi koneksi">
+    HiiFest mengalihkan Anda ke halaman otorisasi CRM Anda. Masuk dengan kredensial CRM Anda dan berikan izin kepada HiiFest untuk membuat dan memperbarui catatan kontak. Anda akan dialihkan kembali ke HiiFest setelah otorisasi selesai.
+
+    <Note>
+      HiiFest hanya meminta izin yang diperlukan untuk menulis catatan kontak. HiiFest tidak membaca data CRM Anda yang sudah ada atau memodifikasi catatan yang dibuat di luar HiiFest.
+    </Note>
+  </Step>
+  <Step title="Petakan field Anda">
+    Pada layar **Field Mapping**, cocokkan field data peserta HiiFest dengan field yang sesuai di CRM Anda. HiiFest mengisi pemetaan yang disarankan secara otomatis — tinjau dan sesuaikan jika diperlukan:
+
+    | Field HiiFest | Field CRM yang Disarankan |
+    |---|---|
+    | Nama depan peserta | First Name |
+    | Nama belakang peserta | Last Name |
+    | Alamat email | Email |
+    | Jenis tiket | Lead Source / Custom Field |
+    | Nama acara | Campaign / Event |
+    | Tanggal pembelian | Created Date |
+  </Step>
+  <Step title="Aktifkan sinkronisasi dan pilih pemicunya">
+    Pilih kapan HiiFest harus mendorong data ke CRM Anda:
+    - **On ticket purchase** — catatan disinkronkan segera setelah pembeli menyelesaikan checkout
+    - **On event end** — sinkronisasi batch berjalan setelah waktu berakhirnya acara, menangkap semua pembelian tiket untuk acara tersebut sekaligus
+
+    Geser toggle **Enable Sync** untuk mengaktifkan integrasi. Mulai dari titik ini, semua data peserta baru mengalir ke CRM Anda secara otomatis.
+  </Step>
+</Steps>
+
+## Data apa saja yang disinkronkan
+
+Setiap catatan sinkronisasi yang dikirim ke CRM Anda mencakup poin data peserta berikut:
+
+- **Nama lengkap** (depan dan belakang)
+- **Alamat email**
+- **Jenis tiket** (misalnya General Admission, VIP, Early Bird)
+- **Nama acara**
+- **Tanggal pembelian**
+
+Data didorong sebagai catatan kontak individual. Jika seorang peserta sudah ada di CRM Anda (dicocokkan berdasarkan alamat email), HiiFest memperbarui catatan mereka alih-alih membuat duplikat.
+
+## Menggunakan data yang disinkronkan untuk kampanye follow-up
+
+Setelah data peserta masuk ke CRM Anda, Anda dapat membangun rangkaian follow-up tertarget yang memaksimalkan hubungan yang Anda mulai di acara Anda:
+
+- **Kampanye re-engagement** — kirimkan pengumuman akses awal untuk acara Anda berikutnya kepada semua orang yang menghadiri acara saat ini. Peserta sebelumnya melakukan konversi pada tingkat yang jauh lebih tinggi dibanding audiens dingin.
+- **Pesan berbasis tier** — segmentasi berdasarkan jenis tiket untuk mengirim pesan yang berbeda kepada pembeli VIP versus peserta general admission. Pembeli VIP sering merespons dengan baik penawaran eksklusif untuk acara mendatang.
+- **Survei pasca-acara** — picu survei kepuasan 24 jam setelah acara berakhir menggunakan tool workflow CRM Anda. Tautkan respons survei kembali ke catatan peserta untuk membangun dataset feedback dari waktu ke waktu.
+
+<Tip>
+  Gabungkan sinkronisasi CRM dengan **Advanced Analytics** HiiFest (Growth+) untuk memahami segmen peserta mana yang paling baik melakukan konversi, lalu gunakan data tersebut untuk membangun lookalike audience di kampanye berbayar Anda — menutup loop antara performa acara dan belanja marketing di masa depan.
+</Tip>

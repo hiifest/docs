@@ -1,0 +1,127 @@
+---
+title: "Kelola peserta HiiFest Anda dan jalankan check-in pada hari event"
+sidebarTitle: "Kelola peserta"
+description: "Lihat, filter, dan ekspor daftar peserta Anda, jalankan check-in berbasis kode QR pada hari event, dan kirim pengumuman langsung dari dasbor HiiFest Anda."
+---
+
+Daftar peserta adalah jantung operasional event Anda. HiiFest memberi Anda tampilan real-time dari setiap orang yang telah mendaftar, alat untuk berkomunikasi dengan mereka sebelum dan selama event, dan alur check-in berbasis QR yang cepat sehingga proses masuk pada hari H berjalan lancar untuk semua orang.
+
+## Melihat daftar peserta Anda
+
+Buka event Anda di [dasbor organizer](https://platform.hiifest.app/dashboard) dan pilih tab **Attendees**. Anda akan melihat tabel langsung berisi semua pendaftar dengan kolom-kolom berikut:
+
+- **Nama** dan **alamat email**
+- **Tingkatan tiket** yang dibeli
+- **Tanggal dan waktu pendaftaran**
+- **Status check-in** (Checked In / Not Yet)
+- **Nomor referensi pesanan**
+
+### Memfilter dan mencari
+
+Gunakan bilah filter di bagian atas daftar peserta untuk mempersempit hasil:
+
+- **Search by name or email** — ketik bagian mana pun dari nama atau alamat email untuk menemukan peserta tertentu secara instan.
+- **Filter by ticket tier** — tampilkan hanya peserta yang membeli tingkatan tertentu.
+- **Filter by check-in status** — lihat dengan cepat siapa yang belum tiba di event Anda.
+
+### Mengekspor data peserta
+
+Klik **Export** (di pojok kanan atas tabel peserta) untuk mengunduh daftar peserta Anda. Untuk membuat ekspor:
+
+1. Buka **Attendees** → **Export**.
+2. Pilih format ekspor Anda (`.csv`).
+3. Pilih kolom mana yang akan disertakan — kolom standar sudah dipilih sebelumnya; kolom pendaftaran kustom tercantum di bawah.
+4. Klik **Download**. File akan langsung tersimpan ke perangkat Anda.
+
+Ekspor mencakup semua kolom yang terlihat ditambah kolom pendaftaran kustom yang Anda konfigurasikan. Gunakan file ini untuk:
+
+- Mengimpor ke CRM atau alat pemasaran email
+- Berbagi dengan staf di lokasi
+- Pelaporan dan analisis pasca-event
+
+Ekspor menangkap snapshot daftar peserta pada saat Anda membuatnya. Ekspor ulang kapan saja untuk mendapatkan data terbaru.
+
+<Note>
+  Data peserta yang diekspor tunduk pada Undang-Undang Pelindungan Data Pribadi (UU PDP) Indonesia. Gunakan dan simpan data ini secara bertanggung jawab dan hanya untuk tujuan yang terkait dengan event di mana data tersebut dikumpulkan.
+</Note>
+
+## Check-in di event
+
+HiiFest menghasilkan kode QR unik untuk setiap peserta yang terdaftar. Gunakan alur check-in untuk memindai kode-kode ini di pintu masuk venue Anda.
+
+<Steps>
+  <Step title="Buka tampilan Check-In">
+    Di dasbor event Anda, klik **Check In** di sidebar kiri. Ini membuka antarmuka check-in real-time, yang berfungsi pada perangkat apa pun yang memiliki kamera — ponsel, tablet, atau laptop.
+  </Step>
+
+  <Step title="Izinkan akses kamera">
+    Saat diminta, izinkan HiiFest mengakses kamera perangkat Anda. Pemindai akan langsung aktif dan siap membaca kode QR peserta.
+  </Step>
+
+  <Step title="Pindai kode QR peserta">
+    Minta setiap peserta membuka email konfirmasi tiket mereka dan menampilkan kode QR. Arahkan kamera Anda ke kode tersebut.
+
+    - **Konfirmasi hijau** — tiket valid dan peserta berhasil di-check-in.
+    - **Peringatan kuning** — tiket valid tetapi peserta ini sudah pernah di-check-in (kemungkinan pemindaian ganda).
+    - **Kesalahan merah** — kode QR tidak valid, milik event berbeda, atau tiket dibatalkan.
+  </Step>
+
+  <Step title="Tangani pengecualian secara manual">
+    Jika peserta tidak dapat menampilkan kode QR mereka, gunakan kolom **Manual Search** untuk mencari mereka berdasarkan nama atau email dan tandai sebagai sudah check-in secara manual.
+  </Step>
+
+  <Step title="Pantau progres check-in">
+    Antarmuka check-in menampilkan hitungan langsung total peserta yang sudah check-in dibandingkan total yang terdaftar. Anda juga dapat melihat ringkasan ini di tab **Attendees** pada perangkat apa pun selama event berlangsung.
+  </Step>
+</Steps>
+
+<Tip>
+  Tugaskan staf check-in sebagai **Team Members** di event Anda dengan peran *Check-In*. Mereka akan dapat mengakses pemindai check-in tanpa melihat data keuangan atau pengaturan yang sensitif.
+</Tip>
+
+## Berkomunikasi dengan peserta
+
+Kirim pengumuman dan pembaruan kepada semua peserta Anda — atau segmen yang difilter — langsung dari dasbor Anda.
+
+### Mengirim pengumuman
+
+1. Di tab **Attendees**, klik **Send Announcement**.
+2. Tulis baris subjek dan badan pesan Anda.
+3. Pilih grup penerima: **All Attendees**, **Ticket Tier** tertentu, atau peserta yang difilter berdasarkan **Check-In Status**.
+4. Klik **Send Now** atau jadwalkan pesan untuk tanggal dan waktu di masa depan.
+
+Pengumuman dikirim melalui email ke alamat terdaftar masing-masing peserta.
+
+### Kasus penggunaan untuk pengumuman
+
+<CardGroup cols={2}>
+  <Card title="Pengingat pra-event" icon="bell">
+    Kirim pengingat 24 jam sebelum pintu dibuka dengan petunjuk arah venue, informasi parkir, dan apa yang perlu dibawa.
+  </Card>
+  <Card title="Pembaruan jadwal" icon="calendar">
+    Beri tahu peserta tentang perubahan pembicara, penyesuaian waktu, atau penambahan sesi segera setelah hal itu terjadi.
+  </Card>
+  <Card title="Peringatan pada hari H" icon="megaphone">
+    Komunikasikan pembaruan antrean, perubahan ruangan, atau informasi darurat secara real-time pada hari event.
+  </Card>
+  <Card title="Tindak lanjut pasca-event" icon="envelope">
+    Berterima kasih kepada peserta, bagikan rekaman atau sumber daya, dan undang mereka ke event Anda berikutnya setelah selesai.
+  </Card>
+</CardGroup>
+
+## Langkah berikutnya
+
+<CardGroup cols={2}>
+  <Card title="Tingkatan tiket" icon="ticket" href="/id/organizer/ticket-tiers">
+    Siapkan dan kelola tingkatan tiket yang menentukan cara peserta mendaftar untuk event Anda.
+  </Card>
+  <Card title="Event hybrid" icon="globe" href="/id/organizer/hybrid-events">
+    Pelajari cara mengelola peserta in-person dan virtual secara bersamaan.
+  </Card>
+  <Card title="Networking Hub" icon="network-wired" href="/id/organizer/networking-hub">
+    Aktifkan peserta untuk saling terhubung sebelum, selama, dan setelah event Anda.
+  </Card>
+  <Card title="Referral System" icon="share-nodes" href="/id/organizer/referral-system">
+    Biarkan peserta menumbuhkan audiens Anda dengan memberi mereka imbalan karena membawa teman.
+  </Card>
+</CardGroup>
