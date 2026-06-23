@@ -1,0 +1,83 @@
+---
+title: "Buat peta venue 3D interaktif untuk acara Anda"
+sidebarTitle: "Pemetaan venue"
+description: "Bangun peta venue 3D interaktif, tetapkan kursi ke tier tiket, dan bantu peserta menavigasi ruang acara Anda — tersedia di paket Pro ke atas."
+---
+
+Untuk acara berskala besar — konser, expo, festival, konferensi — membantu peserta memahami tata letak fisik venue Anda sama pentingnya dengan acaranya sendiri. Tool 3D Venue Mapping HiiFest memungkinkan Anda membangun peta interaktif dan dapat dinavigasi dari venue Anda langsung di dalam platform, menetapkan section kursi tertentu ke tier tiket, dan mempublikasikan peta sehingga peserta dapat mengeksplorasi ruangnya sebelum tiba dan menemukan jalan mereka pada hari-H.
+
+<Info>
+  3D Venue Mapping memerlukan **paket Pro** (Rp 3.990.000/bulan) atau lebih tinggi. Jika Anda menggunakan paket Starter atau Growth, lakukan upgrade dari **Settings → Billing** untuk mengakses fitur ini.
+</Info>
+
+## Apa yang dilakukan 3D venue mapping
+
+Venue mapper memberi Anda dan peserta pemahaman spasial bersama tentang acara Anda:
+
+<CardGroup cols={2}>
+  <Card title="Denah lantai interaktif" icon="map">
+    Unggah denah lantai venue Anda dan ubah menjadi tata letak 3D yang dapat dinavigasi, yang dapat diputar, di-zoom, dan dieksplorasi peserta di perangkat apa pun.
+  </Card>
+  <Card title="Penempatan kursi & section" icon="grid">
+    Definisikan section kursi, baris, dan kursi individual — lalu hubungkan setiap section langsung ke tier tiket untuk kejelasan visual saat pembelian.
+  </Card>
+  <Card title="Wayfinding untuk peserta" icon="location-dot">
+    Publikasikan peta ke halaman acara Anda agar peserta dapat menemukan pintu masuk, pintu keluar, panggung, toilet, area makan, dan kursi mereka sendiri sebelum dan selama acara.
+  </Card>
+  <Card title="Venue multi-lantai" icon="layer-group">
+    Tambahkan beberapa lantai atau zona (misalnya Ground Floor, Mezzanine, VIP Lounge) untuk venue dengan tata letak kompleks.
+  </Card>
+</CardGroup>
+
+## Membuat peta venue
+
+<Steps>
+  <Step title="Buka Venue Mapper">
+    Dari editor acara Anda, klik **Venue** di sidebar kiri, lalu pilih **Open Venue Mapper**. Ini meluncurkan tool pemetaan 3D layar penuh.
+  </Step>
+  <Step title="Unggah denah lantai Anda">
+    Klik **Upload Floor Plan** dan pilih file gambar (PNG, JPG, atau PDF) dari denah lantai venue Anda. HiiFest menggunakan denah lantai Anda sebagai lapisan dasar untuk model 3D.
+
+    Jika Anda tidak memiliki denah lantai digital, gunakan tool **Draw Layout** untuk membuat sketsa denah lantai dasar menggunakan editor shape bawaan — gambar dinding, tambahkan ruangan, dan definisikan zona secara manual.
+  </Step>
+  <Step title="Tambahkan section dan kursi">
+    Gunakan toolbar mapper untuk mendefinisikan struktur venue Anda:
+    - Klik **Add Section** untuk menggambar area kursi atau zona berdiri di denah lantai
+    - Beri nama setiap section (misalnya "Tribun A", "VVIP Pit", "General Standing")
+    - Untuk section duduk, klik **Enable Seating** dan tetapkan jumlah baris serta kursi per baris — HiiFest membuat nomor kursi individual secara otomatis
+    - Untuk zona berdiri, tetapkan angka kapasitas maksimum alih-alih kursi individual
+    - Tambahkan zona non-tempat duduk seperti panggung, gerbang masuk, food court, dan toilet menggunakan tool **Landmark** — ini muncul sebagai ikon berlabel pada peta peserta
+  </Step>
+  <Step title="Tetapkan section ke tier tiket">
+    Navigasi ke panel **Ticket Assignment** di sisi kanan mapper. Seret setiap tier tiket ke section yang sesuai:
+    - Cocokkan tier tiket "VIP" Anda ke section kursi VIP
+    - Cocokkan "General Admission" ke zona berdiri umum
+    - Kursi di section yang ditetapkan akan dicadangkan untuk pembeli tier tiket yang sesuai saat checkout
+  </Step>
+  <Step title="Publikasikan peta venue">
+    Klik **Preview** untuk meninjau peta seperti yang akan dilihat peserta. Periksa apakah semua section diberi label dengan jelas dan semua zona terlihat. Saat Anda sudah puas, klik **Publish Map**. Peta interaktif akan muncul di halaman publik acara Anda segera.
+  </Step>
+</Steps>
+
+## Menetapkan kursi ke tier tiket
+
+Penetapan kursi bekerja dalam dua mode — **auto-assign** dan **attendee-select**:
+
+- **Auto-assign**: HiiFest secara otomatis mengalokasikan nomor kursi tertentu untuk setiap pembeli saat checkout, mendistribusikan kursi secara merata di section. Gunakan ini untuk venue besar di mana mengelola pemilihan kursi individual akan rumit.
+- **Attendee-select**: Pembeli memilih kursi mereka sendiri dari peta kursi interaktif saat checkout. Ini adalah mode yang lebih disukai untuk konser dan pertunjukan di mana posisi kursi penting. Aktifkan per section dengan menggeser toggle **Allow Seat Selection** di panel pengaturan section.
+
+Anda dapat mencampur kedua mode di berbagai section — misalnya, izinkan pemilihan kursi di baris VIP tetapi auto-assign di area umum.
+
+## Bagaimana peserta menggunakan peta venue
+
+Setelah dipublikasikan, peta venue dapat diakses peserta di tiga tempat:
+
+1. **Halaman acara** — tombol "View Venue Map" muncul di listing acara publik, memungkinkan calon pembeli mengeksplorasi tata letak sebelum membeli.
+2. **Email konfirmasi tiket** — tautan peta secara otomatis disertakan dalam setiap email konfirmasi pesanan yang dikirim HiiFest.
+3. **Aplikasi mobile HiiFest** — peserta yang memiliki aplikasi dapat membuka peta venue dengan lokasi GPS mereka di-overlay, memudahkan navigasi real-time pada hari acara.
+
+Peserta dengan kursi yang ditetapkan akan melihat kursi mereka disorot pada peta secara otomatis saat mereka masuk atau memindai kode QR mereka di pintu masuk.
+
+<Tip>
+  Tambahkan ikon landmark terperinci (pintu masuk, toilet, P3K, food stall) sebelum mempublikasikan — peserta sangat bergantung pada ini selama acara berskala besar. Peta yang diberi label dengan baik mengurangi kebingungan antrean dan meningkatkan pengalaman peserta secara keseluruhan.
+</Tip>
