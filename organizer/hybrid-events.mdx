@@ -1,0 +1,119 @@
+---
+title: "Run Hybrid Events with In-Person and Virtual Attendees"
+sidebarTitle: "Hybrid Events"
+description: "Set up a single HiiFest event that serves both in-person and online attendees simultaneously, with separate ticket tiers and check-in flows for each."
+---
+
+A hybrid event lets you welcome guests at a physical venue while simultaneously streaming to an online audience — all managed from a single HiiFest event page. Instead of running two separate events with two separate registration flows, HiiFest consolidates everything: one event URL, unified attendee management, and separate ticket tiers for each attendance format.
+
+## What is a hybrid event on HiiFest
+
+In HiiFest, a hybrid event is an event you configure with the **Hybrid** format. This unlocks both a physical venue address field and a virtual stream URL field on the same event. Attendees choose their preferred attendance mode when selecting a ticket tier, and each group receives confirmation details relevant to their mode — venue directions for in-person guests, and a streaming link for virtual guests.
+
+You manage both groups from the same **Attendees** tab in your dashboard, with a filter to view each mode separately.
+
+## Setting up a hybrid event
+
+<Steps>
+  <Step title="Create or edit your event">
+    Open your [organizer dashboard](https://platform.hiifest.app/dashboard) and click **Create Event**, or open an existing draft event. Navigate to the **Event Details** section.
+  </Step>
+
+  <Step title="Select the Hybrid format">
+    Under **Event Format**, select **Hybrid**. Two new sections appear: **Venue Details** and **Virtual Access**.
+  </Step>
+
+  <Step title="Enter your venue details">
+    Fill in the physical venue information for your in-person attendees:
+
+    - Venue name
+    - Full address (street, city, province, postal code)
+    - Optional map pin for easy navigation
+    - Any entry instructions (e.g. "Use the side entrance on Jl. Sudirman")
+  </Step>
+
+  <Step title="Add your virtual access link">
+    Paste the URL for your online stream or video conference into the **Virtual Access** field. This can be a:
+
+    - Zoom webinar or meeting link
+    - YouTube Live stream URL
+    - Custom RTMP or embed URL
+
+    HiiFest delivers this link only to attendees who purchase a virtual-format ticket tier, keeping it private from in-person-only buyers.
+  </Step>
+
+  <Step title="Create separate ticket tiers for each format">
+    Add at least one ticket tier for **in-person** attendees and one for **virtual** attendees. Tag each tier with its attendance mode so HiiFest sends the correct confirmation details:
+
+    - *In-Person — General Admission* → sends venue details
+    - *Virtual — Online Pass* → sends the streaming link
+
+    See [Ticket Tiers](/organizer/ticket-tiers) for full instructions on configuring pricing, capacity, and availability dates.
+  </Step>
+
+  <Step title="Set capacity independently for each format">
+    Physical and virtual audiences have different capacity constraints. Set your in-person tier capacity to match your venue limit and your virtual tier capacity to match your streaming platform's concurrent viewer cap (or leave it uncapped if your platform allows unlimited viewers).
+  </Step>
+
+  <Step title="Preview and publish">
+    Use **Preview** to verify that the event page shows both attendance options clearly. Once ready, click **Publish Event**. Both in-person and virtual ticket tiers become available for purchase simultaneously.
+  </Step>
+</Steps>
+
+## Managing in-person vs virtual attendees
+
+After your event goes live, the **Attendees** tab shows all registrants from both formats in one list. Use the **Attendance Mode** filter to switch between views:
+
+| View | What it shows |
+|---|---|
+| **All Attendees** | Every registrant regardless of attendance mode |
+| **In-Person** | Only attendees who purchased an in-person tier |
+| **Virtual** | Only attendees who purchased a virtual tier |
+
+### Check-in for in-person attendees
+
+Use the QR-code check-in scanner on event day to verify and admit in-person attendees. Virtual attendees are automatically marked as *Joined* when they click the stream link — no manual check-in required. See [Manage Attendees](/organizer/manage-attendees) for the full check-in guide.
+
+### Sending targeted communications
+
+When sending announcements, select **In-Person Attendees** or **Virtual Attendees** as your recipient group to send format-specific messages — for example, parking instructions to in-person guests and a "stream goes live in 30 minutes" reminder to virtual guests.
+
+## Ticket tiers for hybrid events
+
+Structure your tiers to reflect the real difference in value and cost between the two formats:
+
+<CardGroup cols={2}>
+  <Card title="In-Person tiers" icon="building">
+    Price these to cover your venue, catering, and production costs. Consider Early Bird and VIP sub-tiers within the in-person format for additional revenue segmentation.
+  </Card>
+  <Card title="Virtual tiers" icon="video">
+    Price these lower to reflect the reduced per-attendee cost and wider geographic reach. A free or low-cost virtual tier can significantly expand your event's audience.
+  </Card>
+  <Card title="Early Bird tiers" icon="clock">
+    Offer discounted early bird pricing for both in-person and virtual formats independently. Set a sale end date on each to create urgency and drive early registrations.
+  </Card>
+  <Card title="VIP tiers" icon="star">
+    Add a premium in-person VIP tier with limited capacity for attendees who want reserved seating, priority entry, or exclusive access at your physical venue.
+  </Card>
+</CardGroup>
+
+<Note>
+  Hybrid events are available on all HiiFest plans, including Starter. However, the number of attendees per event is capped by your plan: 150 on Starter, 500 on Growth, and unlimited on Pro and Enterprise. The cap applies to the combined total across both in-person and virtual attendees.
+</Note>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Ticket Tiers" icon="ticket" href="/organizer/ticket-tiers">
+    Configure separate in-person and virtual ticket tiers with distinct pricing and capacity limits.
+  </Card>
+  <Card title="Manage Attendees" icon="users" href="/organizer/manage-attendees">
+    Run QR check-in for in-person guests and track virtual attendance in one unified view.
+  </Card>
+  <Card title="Networking Hub" icon="network-wired" href="/organizer/networking-hub">
+    Help your in-person and virtual attendees connect with each other across both formats.
+  </Card>
+  <Card title="Custom Branding" icon="palette" href="/organizer/custom-branding">
+    Make your hybrid event page look fully on-brand for both audiences.
+  </Card>
+</CardGroup>

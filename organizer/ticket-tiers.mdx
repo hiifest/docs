@@ -1,0 +1,118 @@
+---
+title: "Set Up and Manage Ticket Tiers for Your HiiFest Event"
+sidebarTitle: "Ticket Tiers"
+description: "Create multiple ticket tiers with custom names, IDR pricing, capacity limits, and date-based availability to maximise your event revenue."
+---
+
+Offering multiple ticket tiers lets you serve different segments of your audience — early supporters, general attendees, and premium guests — while giving you precise control over revenue, capacity, and urgency. A well-structured tier strategy can meaningfully increase both attendance and average ticket value.
+
+## Creating a ticket tier
+
+You can add ticket tiers during event creation or at any time after publishing by returning to your event in the [organizer dashboard](https://platform.hiifest.app/dashboard).
+
+<Steps>
+  <Step title="Open the Ticket Tiers section">
+    Inside your event setup or event settings page, scroll to the **Ticket Tiers** section and click **Add Ticket Tier**.
+  </Step>
+
+  <Step title="Name your tier">
+    Enter a clear, descriptive name that attendees will see on the event page. Examples: *Early Bird*, *General Admission*, *VIP*, *Online Pass*, *Group of 5*.
+  </Step>
+
+  <Step title="Set the price">
+    Enter the ticket price in **IDR (Indonesian Rupiah)**. To offer a free ticket, enter `0`. HiiFest displays prices formatted as *Rp X.XXX.XXX* on all attendee-facing pages.
+  </Step>
+
+  <Step title="Define the capacity">
+    Set the maximum number of tickets available at this tier. When the limit is reached, HiiFest automatically marks the tier as **Sold Out** and stops accepting purchases for it. Leave the field blank only if you want to set no cap (not recommended for physical venues).
+  </Step>
+
+  <Step title="Write a tier description">
+    Add a short description explaining what this tier includes — for example, perks, seating area, or access level. This text appears beneath the tier name on your event page and helps attendees choose confidently.
+  </Step>
+
+  <Step title="Set availability dates">
+    Optionally define when this tier goes on sale and when it expires:
+
+    - **Sale start date** — the tier becomes purchasable at this date and time.
+    - **Sale end date** — the tier stops being purchasable at this date and time (even if capacity remains).
+
+    This is how early bird discounts work: set an end date in the future, and the tier automatically closes when that date passes.
+  </Step>
+
+  <Step title="Save the tier">
+    Click **Save Tier**. The new tier appears on your event page immediately. Repeat these steps for each additional tier you want to offer.
+  </Step>
+</Steps>
+
+## Tier types and best practices
+
+Use a combination of the following tier archetypes to create a compelling ticket offering:
+
+<CardGroup cols={2}>
+  <Card title="Early Bird" icon="clock">
+    Reward your most eager supporters with a discounted price. Set a capacity limit (e.g. first 100 tickets) or a hard expiry date. Early bird tiers build momentum and generate early cash flow.
+  </Card>
+  <Card title="General Admission" icon="ticket">
+    Your standard tier for the majority of attendees. Price it at your target rate and set a capacity that matches your venue or virtual platform limit.
+  </Card>
+  <Card title="VIP" icon="star">
+    Offer premium access — reserved seating, backstage passes, exclusive workshops, or meet-and-greet opportunities. Price this tier higher and keep capacity low to maintain exclusivity.
+  </Card>
+  <Card title="Free" icon="gift">
+    Set the price to Rp 0 for free admission. Use this for open-door community events, press passes, or speaker complimentary tickets. Capacity limits still apply.
+  </Card>
+</CardGroup>
+
+## Setting capacity per tier
+
+Every tier has its own independent capacity. When one tier sells out, other tiers continue selling. This allows you to:
+
+- Close early bird pricing automatically once the first batch is gone.
+- Keep VIP truly limited without affecting general admission.
+- Run simultaneous in-person and virtual tiers for [hybrid events](/organizer/hybrid-events) with separate caps for each format.
+
+<Note>
+  The total of all your per-tier capacities should not exceed the real capacity of your venue or virtual platform. HiiFest does not automatically validate the sum against an event-wide cap — you are responsible for setting each tier's limit correctly.
+</Note>
+
+## Date-based availability
+
+Use sale start and end dates to automate tier transitions without any manual intervention:
+
+| Scenario | Configuration |
+|---|---|
+| Early bird that expires | Set a sale end date two weeks before the event. |
+| Tier that opens later | Set a sale start date to the day you want it to become available. |
+| On-door tickets only | Set a sale start date to the morning of the event. |
+| Pre-sale for members | Set a short window before general sales open. |
+
+HiiFest evaluates availability windows in **WIB (UTC+7)** by default. You can change the timezone per event in your event settings.
+
+## Transaction fees
+
+HiiFest deducts a transaction fee from each paid ticket sale. The fee rate depends on your plan:
+
+| Plan | Transaction fee |
+|---|---|
+| Starter | 4% per transaction |
+| Growth | 2.5% per transaction |
+| Pro | 1.5% per transaction |
+| Enterprise | Negotiated individually |
+
+<Tip>
+  If you are running a high-volume or high-revenue event, upgrading to Growth or Pro can meaningfully reduce your cost per ticket sold. Use the fee difference to justify the plan cost before your event launches.
+</Tip>
+
+Fees are automatically deducted at the time of payout. The amount shown to buyers on the ticket purchase page reflects the face-value price you set — fees are not added on top for buyers unless you choose to pass them on in your pricing.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Create an Event" icon="calendar-plus" href="/organizer/create-event">
+    Walk through the full event creation flow, including adding your first ticket tier.
+  </Card>
+  <Card title="Manage Attendees" icon="users" href="/organizer/manage-attendees">
+    Track who has purchased each tier and manage check-in on event day.
+  </Card>
+</CardGroup>

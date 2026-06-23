@@ -1,0 +1,88 @@
+---
+title: "Sync Attendee Data with Your CRM"
+sidebarTitle: "CRM Integrations"
+description: "Connect HiiFest to your CRM platform to sync attendee data automatically and power follow-up campaigns — available on Pro plans and above."
+---
+
+Selling tickets is the beginning of your relationship with an attendee, not the end. The organizers who build lasting audiences use every event as a source of high-quality contact data — and they put that data to work in their CRM the moment an event wraps. HiiFest's CRM integrations sync your attendee records directly to the tools your marketing and sales teams already use, so you can run targeted follow-up campaigns, re-engage past attendees for your next event, and track conversions from a single pipeline.
+
+<Info>
+  CRM integrations require a **Pro plan** (Rp 3.990.000/mo) or higher. Organizers on Starter or Growth plans can upgrade from **Settings → Billing** to access this feature.
+</Info>
+
+## Supported CRM platforms
+
+HiiFest offers native connectors for leading CRM platforms, with no third-party middleware required:
+
+<CardGroup cols={3}>
+  <Card title="HubSpot" icon="h">
+    Sync contacts directly to HubSpot, trigger workflows on ticket purchase, and track attendees through your marketing pipeline.
+  </Card>
+  <Card title="Salesforce" icon="cloud">
+    Push attendee records to Salesforce objects, map custom fields, and build post-event campaign segments in Marketing Cloud.
+  </Card>
+  <Card title="Custom via Webhook" icon="code">
+    Don't see your CRM? Use HiiFest's outbound webhook to push attendee data to any platform that accepts HTTP POST requests.
+  </Card>
+</CardGroup>
+
+## Connecting your CRM
+
+<Steps>
+  <Step title="Open Integrations settings">
+    Log in at [platform.hiifest.app/dashboard](https://platform.hiifest.app/dashboard). Click your **Organizer Name** in the top-right corner, then select **Settings**. In the left sidebar, click **Integrations**.
+  </Step>
+  <Step title="Select your CRM">
+    Under the **CRM Connectors** section, find your CRM platform in the list and click **Connect**. If your CRM is not listed, click **Add Webhook** to configure a custom connection.
+  </Step>
+  <Step title="Authorize the connection">
+    HiiFest redirects you to your CRM's authorization page. Log in with your CRM credentials and grant HiiFest permission to create and update contact records. You'll be redirected back to HiiFest once authorization is complete.
+
+    <Note>
+      HiiFest requests only the permissions required to write contact records. It does not read your existing CRM data or modify records created outside of HiiFest.
+    </Note>
+  </Step>
+  <Step title="Map your fields">
+    On the **Field Mapping** screen, match HiiFest attendee data fields to the corresponding fields in your CRM. HiiFest pre-fills suggested mappings automatically — review and adjust as needed:
+
+    | HiiFest Field | Suggested CRM Field |
+    |---|---|
+    | Attendee first name | First Name |
+    | Attendee last name | Last Name |
+    | Email address | Email |
+    | Ticket type | Lead Source / Custom Field |
+    | Event name | Campaign / Event |
+    | Purchase date | Created Date |
+  </Step>
+  <Step title="Enable sync and choose triggers">
+    Select when HiiFest should push data to your CRM:
+    - **On ticket purchase** — records sync immediately when a buyer completes checkout
+    - **On event end** — a batch sync runs once the event end time passes, capturing all ticket purchases for the event in one go
+
+    Toggle **Enable Sync** to activate the integration. From this point, all new attendee data flows to your CRM automatically.
+  </Step>
+</Steps>
+
+## What data syncs
+
+Every sync record pushed to your CRM includes the following attendee data points:
+
+- **Full name** (first and last)
+- **Email address**
+- **Ticket type** (e.g., General Admission, VIP, Early Bird)
+- **Event name**
+- **Purchase date**
+
+Data is pushed as individual contact records. If an attendee already exists in your CRM (matched by email address), HiiFest updates their record rather than creating a duplicate.
+
+## Using synced data for follow-up campaigns
+
+Once attendee data is in your CRM, you can build targeted follow-up sequences that make the most of the relationship you started at your event:
+
+- **Re-engagement campaigns** — send early-access announcements for your next event to everyone who attended the current one. Past attendees convert at significantly higher rates than cold audiences.
+- **Tier-based messaging** — segment by ticket type to send different messages to VIP buyers versus general admission attendees. VIP buyers often respond well to exclusive offers for future events.
+- **Post-event surveys** — trigger a satisfaction survey 24 hours after event end using your CRM's workflow tool. Link survey responses back to attendee records to build a feedback dataset over time.
+
+<Tip>
+  Combine CRM sync with HiiFest's **Advanced Analytics** (Growth+) to understand which attendee segments convert best, then use that data to build lookalike audiences in your paid campaigns — closing the loop between event performance and future marketing spend.
+</Tip>

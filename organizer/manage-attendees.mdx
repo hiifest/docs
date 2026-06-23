@@ -1,0 +1,127 @@
+---
+title: "Manage Your HiiFest Attendees and Run Event-Day Check-In"
+sidebarTitle: "Manage Attendees"
+description: "View, filter, and export your attendee list, run QR-code check-in on event day, and send announcements directly from your HiiFest dashboard."
+---
+
+Your attendee list is the operational heart of your event. HiiFest gives you a real-time view of everyone who has registered, tools to communicate with them before and during the event, and a fast QR-based check-in flow so entry on the day is smooth for everyone.
+
+## Viewing your attendee list
+
+Open your event in the [organizer dashboard](https://platform.hiifest.app/dashboard) and select the **Attendees** tab. You will see a live table of all registrants with the following columns:
+
+- **Name** and **email address**
+- **Ticket tier** purchased
+- **Registration date and time**
+- **Check-in status** (Checked In / Not Yet)
+- **Order reference number**
+
+### Filtering and searching
+
+Use the filter bar at the top of the attendee list to narrow results:
+
+- **Search by name or email** — type any part of a name or email address to find a specific attendee instantly.
+- **Filter by ticket tier** — show only attendees who purchased a particular tier.
+- **Filter by check-in status** — quickly see who has not yet arrived at your event.
+
+### Exporting attendee data
+
+Click **Export** (top-right of the attendee table) to download your attendee list. To generate an export:
+
+1. Go to **Attendees** → **Export**.
+2. Choose your export format (`.csv`).
+3. Select which fields to include — standard fields are pre-selected; custom registration fields are listed below.
+4. Click **Download**. The file saves to your device immediately.
+
+The export includes all visible columns plus any custom registration fields you configured. Use this file for:
+
+- Importing into a CRM or email marketing tool
+- Sharing with on-site staff
+- Post-event reporting and analysis
+
+Exports capture a snapshot of the attendee list at the moment you generate them. Re-export any time to get the latest data.
+
+<Note>
+  Exported attendee data is subject to Indonesia's Personal Data Protection Law (UU PDP). Use and store this data responsibly and only for purposes related to the event for which it was collected.
+</Note>
+
+## Check-in at the event
+
+HiiFest generates a unique QR code for every registered attendee. Use the check-in flow to scan these codes at your venue entrance.
+
+<Steps>
+  <Step title="Open the Check-In view">
+    In your event dashboard, click **Check In** in the left sidebar. This opens the real-time check-in interface, which works on any device with a camera — phone, tablet, or laptop.
+  </Step>
+
+  <Step title="Allow camera access">
+    When prompted, allow HiiFest to access your device camera. The scanner activates immediately and is ready to read attendee QR codes.
+  </Step>
+
+  <Step title="Scan the attendee's QR code">
+    Ask each attendee to open their ticket confirmation email and display their QR code. Point your camera at the code.
+
+    - **Green confirmation** — the ticket is valid and the attendee is checked in successfully.
+    - **Yellow warning** — the ticket is valid but this attendee has already been checked in (possible duplicate scan).
+    - **Red error** — the QR code is invalid, belongs to a different event, or the ticket was cancelled.
+  </Step>
+
+  <Step title="Handle exceptions manually">
+    If an attendee cannot display their QR code, use the **Manual Search** field to look them up by name or email and mark them as checked in manually.
+  </Step>
+
+  <Step title="Monitor check-in progress">
+    The check-in interface shows a live count of total checked-in attendees versus total registered. You can also view this summary in the **Attendees** tab on any device during the event.
+  </Step>
+</Steps>
+
+<Tip>
+  Assign check-in staff as **Team Members** on your event with the *Check-In* role. They will be able to access the check-in scanner without seeing sensitive financial or settings data.
+</Tip>
+
+## Communicating with attendees
+
+Send announcements and updates to all your attendees — or a filtered segment — directly from your dashboard.
+
+### Sending an announcement
+
+1. In the **Attendees** tab, click **Send Announcement**.
+2. Write your subject line and message body.
+3. Choose your recipient group: **All Attendees**, a specific **Ticket Tier**, or attendees filtered by **Check-In Status**.
+4. Click **Send Now** or schedule the message for a future date and time.
+
+Announcements are delivered by email to each attendee's registered address.
+
+### Use cases for announcements
+
+<CardGroup cols={2}>
+  <Card title="Pre-event reminders" icon="bell">
+    Send a reminder 24 hours before doors open with venue directions, parking info, and what to bring.
+  </Card>
+  <Card title="Schedule updates" icon="calendar">
+    Notify attendees of speaker changes, time adjustments, or session additions as soon as they happen.
+  </Card>
+  <Card title="On-the-day alerts" icon="megaphone">
+    Communicate queue updates, room changes, or emergency information in real time on event day.
+  </Card>
+  <Card title="Post-event follow-up" icon="envelope">
+    Thank attendees, share recordings or resources, and invite them to your next event after it ends.
+  </Card>
+</CardGroup>
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Ticket Tiers" icon="ticket" href="/organizer/ticket-tiers">
+    Set up and manage the ticket tiers that determine how attendees register for your event.
+  </Card>
+  <Card title="Hybrid Events" icon="globe" href="/organizer/hybrid-events">
+    Learn how to manage both in-person and virtual attendees simultaneously.
+  </Card>
+  <Card title="Networking Hub" icon="network-wired" href="/organizer/networking-hub">
+    Enable attendees to connect with each other before, during, and after your event.
+  </Card>
+  <Card title="Referral System" icon="share-nodes" href="/organizer/referral-system">
+    Let your attendees grow your audience by rewarding them for bringing friends.
+  </Card>
+</CardGroup>

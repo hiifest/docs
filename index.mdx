@@ -1,0 +1,134 @@
+---
+title: Home
+description: Everything you need to create events, sell tickets, and grow your audience on HiiFest — the all-in-one event platform for Indonesia.
+mode: frame
+---
+
+<div data-product-guide-index className="flex w-full flex-col gap-8 max-w-5xl mx-auto px-4 md:px-8 lg:px-12 py-10 lg:gap-14 lg:py-16">
+  <div className="flex max-w-[540px] flex-col gap-2 self-center text-center">
+    <h1 className="text-[30px] font-medium leading-9 tracking-tight text-gray-900 dark:text-gray-50">
+      HiiFest Documentation
+    </h1>
+    <p className="text-balance text-base leading-relaxed tracking-tight text-gray-600 dark:text-gray-400">
+      Everything you need to create events, sell tickets, and grow your audience — for organizers, attendees, vendors, and venues.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <Card
+      title={<span className="product-guide-feature-card-title">Getting Started</span>}
+      icon="rocket"
+      href="/introduction"
+      className="product-guide-feature-card"
+      size={64}
+    >
+      <span className="product-guide-feature-card-description">Create your account and launch your first event in minutes.</span>
+    </Card>
+
+    <a
+      href="/organizer/create-event"
+      className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+    >
+      <Icon icon="calendar-plus" color="rgb(var(--primary))" size={18} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Create an Event</span>
+        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          Launch your event, configure ticket tiers, and go live fast.
+        </span>
+      </div>
+    </a>
+    <a
+      href="/organizer/analytics-dashboard"
+      className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+    >
+      <Icon icon="chart-bar" color="rgb(var(--primary))" size={18} className="shrink-0" />
+      <div className="flex flex-col gap-1">
+        <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Analytics</span>
+        <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+          Monitor ticket sales, revenue, and attendee engagement in real time.
+        </span>
+      </div>
+    </a>
+  </div>
+
+  <hr className="border-0 border-t border-border" />
+
+  <div className="flex flex-col gap-4">
+    <h2 className="font-serif text-xl font-medium leading-normal text-gray-900 dark:text-gray-50">Common tasks</h2>
+
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <a
+        href="/concepts/team-members"
+        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="users" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Manage your team</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Add team members and control roles across your organizer workspace.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/organizer/ticket-tiers"
+        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="ticket" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Set up ticket tiers</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Create Early Bird, VIP, or custom ticket types with flexible pricing.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/organizer/ai-features"
+        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="sparkles" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Use AI features</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Reach the right audience with AI-powered marketing and insights.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/plans/overview"
+        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="layers" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Choose a plan</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Compare Starter, Growth, Pro, and Enterprise to find the right fit.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/organizer/hybrid-events"
+        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="globe" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">Run a hybrid event</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Combine in-person and virtual attendees in one seamless experience.
+          </span>
+        </div>
+      </a>
+      <a
+        href="/vendors/list-services"
+        className="rounded-2xl flex flex-col gap-4 border bg-gray-50 p-4 outline-none shadow-sm shadow-gray-950/5 transition hover:border-primary hover:shadow-md dark:bg-gray-950 dark:shadow-black/20 dark:hover:border-primary"
+      >
+        <Icon icon="briefcase" color="rgb(var(--primary))" size={18} className="shrink-0" />
+        <div className="flex flex-col gap-1">
+          <span className="font-serif text-base font-medium text-gray-900 dark:text-gray-50">List your services</span>
+          <span className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+            Join the vendor directory and connect with event organizers.
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

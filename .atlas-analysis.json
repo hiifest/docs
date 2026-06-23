@@ -1,0 +1,143 @@
+{
+  "projectType": "saas",
+  "projectName": "HiiFest",
+  "projectDescription": "HiiFest is an all-in-one event management platform for organizers, attendees, vendors, and venue managers across Indonesia.",
+  "theme": "almond",
+  "primaryColor": "#7C3AED",
+  "lightColor": "#A78BFA",
+  "darkColor": "#5B21B6",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "account-setup"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/workspace-types",
+              "concepts/events",
+              "concepts/ticketing",
+              "concepts/team-members"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Organizer Guide",
+        "groups": [
+          {
+            "group": "Events",
+            "pages": [
+              "organizer/create-event",
+              "organizer/ticket-tiers",
+              "organizer/manage-attendees",
+              "organizer/hybrid-events"
+            ]
+          },
+          {
+            "group": "Growth & Marketing",
+            "pages": [
+              "organizer/ai-features",
+              "organizer/networking-hub",
+              "organizer/referral-system",
+              "organizer/custom-branding"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "organizer/analytics-dashboard",
+              "organizer/advanced-analytics",
+              "organizer/revenue-tracking"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "organizer/vendor-directory",
+              "organizer/venue-mapping",
+              "organizer/crm-integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Attendees & Vendors",
+        "groups": [
+          {
+            "group": "Attendees",
+            "pages": [
+              "attendees/discover-events",
+              "attendees/buy-tickets",
+              "attendees/manage-tickets"
+            ]
+          },
+          {
+            "group": "Vendors & Venues",
+            "pages": [
+              "vendors/list-services",
+              "vendors/manage-inquiries",
+              "venues/list-venue",
+              "venues/manage-bookings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Plans & Support",
+        "groups": [
+          {
+            "group": "Pricing",
+            "pages": [
+              "plans/overview",
+              "plans/compare",
+              "plans/enterprise"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "support/submit-ticket",
+              "support/faq",
+              "support/contact"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Event creation with lightning-fast setup (under 2 minutes)",
+    "Custom ticket tiers and attendee management",
+    "AI-powered marketing and audience insights",
+    "Real-time analytics dashboard",
+    "Hybrid (in-person + virtual) event support",
+    "Vendor directory and collaboration workspace",
+    "3D venue mapping (Pro and above)",
+    "Networking Hub for attendee engagement",
+    "Referral system for organic growth",
+    "CRM integrations (Pro and above)",
+    "Secure payments with instant payouts",
+    "Team member management with role-based access",
+    "Tiered pricing: Starter, Growth, Pro, Enterprise",
+    "SSO and SCIM support (Enterprise)",
+    "White-label and API access (Enterprise)"
+  ],
+  "publicApiSurface": [
+    "POST /auth/register — create a new account (attendee, organizer, vendor, venue)",
+    "POST /auth/login — authenticate and start a session",
+    "GET /events — browse and filter events (in-person/virtual, city, category)",
+    "POST /events — create a new event (organizers)",
+    "GET /dashboard — organizer analytics and revenue overview",
+    "POST /support — submit a support ticket",
+    "GET /pricing — view available plans and feature comparison"
+  ]
+}
